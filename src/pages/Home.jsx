@@ -1,17 +1,14 @@
 import MainLayout from '../layouts/MainLayout';
-import useFetchCrypto from '../hooks/useFetchCrypto';
+import AllCryptos from "../components/AllCryptos";
 
 export default function Home() {
-
-  let {getAll, getTrending} = useFetchCrypto();
 
   return (
     <MainLayout>
         <div className='home'>
 
           <section className='all-coins'>
-            <h2>All coins</h2>
-
+            <AllCryptos/>
           </section>
 
           <section className='trending'>
